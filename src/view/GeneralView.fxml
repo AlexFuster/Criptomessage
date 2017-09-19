@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="400.0" minWidth="410.0" prefHeight="400.0" prefWidth="400.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GeneralViewController">
+   <children>
+      <TextField fx:id="kWord" prefHeight="9.0" prefWidth="410.0" promptText="Key word" style="-fx-background-color: rgb(50,50,50);" />
+      <SplitPane dividerPositions="0.3975, 0.6025" layoutY="25.0" pickOnBounds="false" prefHeight="375.0" prefWidth="410.0">
+        <items>
+          <AnchorPane maxWidth="159.0" minHeight="0.0" minWidth="159.0" prefHeight="398.0" prefWidth="159.0">
+               <children>
+                  <TextArea fx:id="tin" prefHeight="375.0" prefWidth="164.0" promptText="In text" />
+               </children>
+            </AnchorPane>
+            <VBox maxWidth="78.0" minWidth="78.0" prefHeight="375.0" prefWidth="78.0" spacing="41.0" style="-fx-background-color: rgb(50,50,50);">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleEncode" prefHeight="25.0" prefWidth="109.0" text="Encode" />
+                  <Button mnemonicParsing="false" onAction="#handleDecode" prefHeight="25.0" prefWidth="99.0" text="Decode" />
+                  <Button mnemonicParsing="false" onAction="#handleFlecha" prefHeight="25.0" prefWidth="96.0" text="&lt;&lt;&lt;&lt;&lt;&lt;&lt;" />
+                  <Button ellipsisString="" mnemonicParsing="false" onAction="#handleCopiar" prefHeight="25.0" prefWidth="91.0" text="Copy out" />
+                  <Button mnemonicParsing="false" onAction="#handleLimpiar" prefHeight="25.0" prefWidth="114.0" text="Clear in" />
+               </children>
+               <padding>
+                  <Insets bottom="41.0" top="41.0" />
+               </padding>
+            </VBox>
+          <AnchorPane maxWidth="159.0" minHeight="0.0" minWidth="159.0" prefHeight="398.0" prefWidth="159.0">
+               <children>
+                  <TextArea fx:id="tout" editable="false" prefHeight="375.0" prefWidth="164.0" promptText="Out text" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+
+.text-area .content{
+	-fx-background-color:rgb(50,50,50);
+}
+.text-area{
+	-fx-text-fill:white 
+}
+.text-field{
+	-fx-text-fill:white 
+}
+
